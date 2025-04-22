@@ -1,7 +1,7 @@
 /* CSS BY NAME [Natty Daniel] */
 
 /* IMPORTED FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kavoon&display=swap');
 
 /* CSS RESET */
 * {
@@ -21,6 +21,8 @@
   --color-pink: #D9526F;
   --color-dark-gray: #1E1E1E;
   --color-white: #ffffff;
+  --color-orange: #FFA500;
+  --color-red: #D52A3A;
   --spacing: 1rem;
   --border-radius: 8px;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -37,7 +39,6 @@ body {
   line-height: 1.6;
 }
 
-
 h1, h2 {
   font-family: var(--font-heading);
 }
@@ -48,6 +49,12 @@ h1 {
 
 nav h2 {
   font-size: 1.5em;
+  font-family: var(--font-heading);
+  color: var(--color-dark-gray);
+  background-color: var(--color-orange);
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
 }
 
 h2 {
@@ -56,13 +63,16 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  color: var(--color-yellow);
 }
 
 h4 {
+  font-family: var(--font-body);
   font-size: 1.15em;
 }
 
 header {
+  background-color: var(--color-purple);
   text-align: center;
   margin-bottom: var(--spacing);
 }
@@ -79,24 +89,31 @@ header p {
 
 nav ul {
   list-style: none;
+  background-color: var(--color-orange);
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
+  flex-direction: column;
+  gap: 0;
   margin-top: 1rem;
+  border-radius: 0;
 }
 
 nav a {
-  color: var(--color-white);
-  background-color: var(--color-yellow);
+  background-color: var(--color-white);
+  color: var(--color-purple);
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  border-radius: 0;
   display: block;
+  border-bottom: 1px solid var(--color-orange);
+  font-size: 0.95rem;
 }
 
 section {
+  background-color: var(--color-purple);
+  padding: 1rem;
+  border-radius: var(--border-radius);
   margin-top: 2rem;
 }
 
@@ -113,15 +130,15 @@ article div {
 }
 
 article img {
-  width: 32px;
-  height: 32px;
+  width: 100px;
+  height: 100px;
   vertical-align: middle;
   margin-right: 0.5rem;
 }
 
 article h4 {
   margin-top: 0.5rem;
-  color: var(--color-teal);
+  color: var(--color-purple);
 }
 
 ul {
@@ -132,6 +149,7 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Pricing Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -146,17 +164,29 @@ td {
 }
 
 th {
-  background-color: var(--color-lavender);
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 
+/* Text Box */
+.text-box {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* CTA Section */
 #cta {
-  text-align: center;
-  margin-top: 2rem;
-  background: var(--color-pink);
+  margin-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: var(--color-red);
+  padding: 2rem;
+  border-radius: 0;
   color: var(--color-white);
-  padding: 1rem;
-  border-radius: var(--border-radius);
+  text-align: center;
 }
 
 #cta a {
@@ -168,6 +198,58 @@ th {
   margin-top: 1rem;
   border-radius: var(--border-radius);
   font-weight: bold;
+}
+
+/* Why Choose Us Section */
+#why-us {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: var(--color-red);
+  padding: 2rem;
+  border-radius: 0;
+  color: var(--color-white);
+  text-align: center;
+  font-weight: bold;
+}
+
+.why-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.why-box {
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  color: var(--color-dark-gray);
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.why-box.teal {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+}
+
+.why-box.lavender {
+  background-color: var(--color-lavender);
+  color: var(--color-white);
+}
+
+.why-box.orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.why-box.white {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
 }
 
 footer {
