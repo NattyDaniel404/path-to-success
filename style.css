@@ -78,8 +78,10 @@ header {
 }
 
 header h1 {
-  color: var(--color-yellow);
+  color: var(--color-white);
 }
+
+
 nav ul {
   list-style: none;
   background-color: var(--color-orange);
