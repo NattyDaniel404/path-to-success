@@ -29,13 +29,14 @@
 /* GLOBAL STYLES (mobile first/small) */
 body {
   font-family: var(--font-body);
-  background: var(--color-teal);
+  background: var(--color-lavender);
   color: var(--color-dark-gray);
   max-width: 450px;
   margin: 0 auto;
   padding: var(--spacing);
   line-height: 1.6;
 }
+
 
 h1, h2 {
   font-family: var(--font-heading);
